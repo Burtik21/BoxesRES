@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu {
+    margin: auto;
+    width: 60vw;
+    height: 10vh;
+    background-color: #0071BD;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-text-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.list {
+    background-color: #81B8DF;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    font-size: 2em;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: none;
+    margin-left: auto;
+}
+
+.zoom {
+    background-color: #81B8DF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    font-size: 2em;
+    color: white;
+}
+
+.menu-list {
+    background-color: #81B8DF;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-link {
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    margin-right: 1em;
+}
+
+.main-container {
+    width: 60vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 99%;
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.yellow {
+    background-color: #FBB03B;
+    width: 24%;
+    height: 24vh;
+}
+
+.orange {
+    background-color: #F15A25;
+    width: 32%;
+    height: 24vh;
+}
+
+.red {
+    background-color: #C2272D;
+    width: 49%;
+    height: 24vh;
+}
+
+.purple {
+    background-color: #9779ad;
+    width: 32%;
+    height: 12vh;
+}
+
+aside {
+    width: 15vw;
+    height: 99%;
+    background-color: #01A89E;
+}
+
+nav {
+    background-color: #0071BD;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 16vh;
+    background-color: #662E91;
+
+}
+
+.purple-container {
+    margin: 0 auto;
+    width: 61vw;
+    height: 16vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 320px) {
+    .list {
+        display: flex;
+    }
+
+    .orange {
+        display: none;
+    }
+
+    .menu-list {
+        display: none;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .zoom {
+        display: none;
+        width: 100vw;
+    }
+
+    .main-container {
+        width: 60vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside {
+        width: 99%;
+        height: 24vh;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    section {
+        width: 60vw;
+        gap: 1%;
+    }
+
+    .yellow {
+        margin-top: 1%;
+        width: 49%;
+    }
+
+    .red {
+        margin-top: 1%;
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nav-menu {
+        width: 90vw;
+    }
+
+    .list {
+        display: flex;
+    }
+
+    .orange {
+        display: none;
+    }
+
+    .menu-list {
+        display: none;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .zoom {
+        display: none;
+        width: 100vw;
+    }
+
+    .main-container {
+        width: 90vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside {
+        width: 100%;
+        height: 10vh;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    section {
+        width: 90vw;
+    }
+
+    .yellow {
+        height: 10vh;
+        margin-top: 4%;
+        width: 100%;
+    }
+
+    .orange {
+        height: 10vh;
+        display: block;
+        margin-top: 4%;
+        width: 100%;
+    }
+
+    .red {
+        height: 10vh;
+        margin-top: 4%;
+        width: 100%;
+    }
+
+    .red {
+        background-color: #C2272D;
+        width: 49%;
+        height: 24vh;
+    }
+
+    .purple {
+        background-color: #9779ad;
+        width: 100%;
+        margin-top: 4%;
+        height: 5vh;
+    }
+}
